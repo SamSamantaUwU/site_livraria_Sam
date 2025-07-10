@@ -1,0 +1,142 @@
+/* Reset dos padrões do navegador */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+/* Regra para as tags */
+body {
+    background-color: rgb(242, 227, 255);
+    color: #333;
+}
+h1,h2,h3,h4 {
+    font-family: "Libertinus Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* cabeçalho do site */
+header {
+    background-color: rgb(232, 186, 255);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+     align-items: center;
+}
+
+/* ** --------  MENU VERTICAL -------- ** */
+/* Definir largura da caixa */
+header nav {
+    margin-left: 40px;
+}
+
+/* ocultar os marcadores da lista dentro de nav */
+header nav ul {
+    list-style-type: none;
+}
+
+/* Converter li e a para comportamento de bloco */
+header nav li,
+header nav a {
+    display: inline-block;
+}
+
+/* Definir aparência dos links */
+header nav li a,
+header nav li a:visited {
+    text-decoration: none;
+    background-color: #000;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    padding: 10px;
+}
+
+/* Definir aparência dos links no hover */
+header nav li a:hover {
+    color: #222222;
+    background-color: #fff;
+}
+
+
+main {
+    min-height: 600px;
+    padding: 20px;
+}
+
+footer{
+    padding: 20px;
+    background-color: rgb(232, 186, 255);
+}
+footer nav{
+    width: 380px;
+}
+footer nav ul{
+    list-style-type: none;
+}
+footer nav li, footer nav a{
+    display: block;
+}
+footer nav li a, footer nav li a:visited{
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    margin: 0 0 10px 0;
+    padding: 10px;
+}
+footer nav li a:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+
+
+/* Regra para as classes */
+.logo {
+    display: block;
+    width: 120px;
+    margin-right: 20px;
+    
+}
+
+.destaques{
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(186, 253, 244);
+    border: 1px solid rgb(172, 255, 255);
+}
+
+.destaques a{
+    margin: 20pxx;
+}
+
+
+
+/* Regra para as ID's */
+#btn-whats {
+    width: 80px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    
+}
+
+#whats-mensage {
+width: 250px;
+padding: 10px;
+background-color: #ffd4d4;
+position: fixed;
+bottom: 90px;
+right: 25px;
+display: none;
+}
