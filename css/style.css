@@ -140,3 +140,30 @@ bottom: 90px;
 right: 25px;
 display: none;
 }
+
+
+.teste-menu-responsivo{
+padding: 10px;
+background-color: rgb(174, 137, 209);
+display: none;
+
+}
+
+/* Comportamento do menu no celular */
+@media screen and (max-width: 600px){
+    /*no celular oculta menu horizontal*/
+header nav{
+    display: none
+}
+
+
+    /*exibe o menu de celular*/
+.teste-menu-responsivo{
+display: block;
+
+}
+
+}
+
+
+    
